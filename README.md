@@ -14,8 +14,8 @@ require "mote/render"
 Cuba.plugin(Mote::Render)
 ```
 
-`Mote::Render` comes with three helpful methods: `partial`, `view` and
-`render`.
+`Mote::Render` provides three helper methods for rendering templates:
+`partial`, `view` and `render`.
 
 ```ruby
 Cuba.define do
@@ -34,6 +34,18 @@ Cuba.define do
     render("contact")
   end
 end
+```
+
+By default, `Mote::Render` assumes that all view templates are placed
+in a folder named `views` and that they use the `.mote` extension. Also
+for `view` and `render` methods, it assumes that the layout template is
+called `layout`.
+
+The defaults can be changed through the `Cuba.settings` method:
+
+```ruby
+Cuba.settings[:mote][:views] = "./views/admin/"
+Cuba.settings[:mote][:layout] = "admin"
 ```
 
 Installation
