@@ -67,8 +67,7 @@ To render inner content into a layout, use the `{{ content }}` tag.
 
 ### Helpers
 
-To use another helper method in the templates, you can use the `app`
-variable:
+You can use the `app` variable, to access the application helpers.
 
 ```ruby
 Cuba.define do
