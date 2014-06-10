@@ -1,7 +1,8 @@
 mote-render
 ===========
 
-Mote plugin for Cuba.
+Mote plugin for Cuba. This extension was extracted from the
+[cuba-contrib][cuba-contrib] gem, made by [cyx][cyx].
 
 Usage
 -----
@@ -91,4 +92,5 @@ $ gem install mote-render
 
 [cuba]: https://github.com/soveran/cuba
 [cuba-contrib]: https://github.com/cyx/cuba-contrib
+[cyx]: https://github.com/cyx
 [mote]: https://github.com/soveran/mote
