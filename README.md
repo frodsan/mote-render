@@ -1,7 +1,7 @@
 mote-render
 ===========
 
-Mote plugin for Cuba. This extension was extracted from the
+Mote plugin for Cuba. This plugin was extracted from the
 [cuba-contrib][cuba-contrib] gem, made by [cyx][cyx].
 
 Usage
@@ -40,7 +40,7 @@ end
 By default, `Mote::Render` assumes that all view templates are placed
 in a folder named `views` and that they use the `.mote` extension. Also
 for `view` and `render` methods, it assumes that the layout template is
-called `layout`.
+called `layout.mote`.
 
 The defaults can be changed through the `Cuba.settings` method:
 
@@ -67,11 +67,12 @@ To render inner content into a layout, use the `{{ content }}` tag.
 
 ### Helpers
 
-You can use the `app` variable, to access the application helpers.
+You can use the `app` variable to access the application helpers.
 
 ```ruby
 Cuba.define do
   def h(unsafe)
+    ...
   end
 end
 ```
