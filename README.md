@@ -51,8 +51,7 @@ Cuba.settings[:mote][:layout] = "admin"
 
 ### Layouts
 
-To render inner content into a layout, use the `{{ content }}` tag,
-for example:
+To render inner content into a layout, use the `{{ content }}` tag.
 
 ```html
 <html>
@@ -68,7 +67,8 @@ for example:
 
 ### Helpers
 
-To use another helper methods, you can use the `app` method:
+To use another helper method in the templates, you can use the `app`
+variable:
 
 ```ruby
 Cuba.define do
