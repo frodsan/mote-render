@@ -48,6 +48,40 @@ Cuba.settings[:mote][:views] = "./views/admin/"
 Cuba.settings[:mote][:layout] = "admin"
 ```
 
+### Layouts
+
+To render inner content into a layout, use the `{{ content }}` tag,
+for example:
+
+```html
+<html>
+  <head>
+    <title>Mote Layout</title>
+  </head>
+  <body>
+    <h1>Hello, mote!</h1>
+    {{ content }}
+  </body>
+</html>
+```
+
+### Helpers
+
+To use another helper methods, you can use the `app` method:
+
+```ruby
+Cuba.define do
+  def h(unsafe)
+  end
+end
+```
+
+```html
+<h1>{{ app.h("unsafe") }}</h1>
+
+{{ app.partial("list") }}
+```
+
 Installation
 ------------
 
