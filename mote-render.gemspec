@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "mote-render"
-  s.version = "1.0.0"
+  s.version = "1.1.0"
   s.summary = "Mote plugin for Cuba."
   s.description = s.summary
   s.authors = ["Cyril David", "Francesco Rodríguez", "Mayn Kjær"]
