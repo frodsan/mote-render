@@ -1,5 +1,3 @@
-require "mote"
-
 module Mote::Render
   include Mote::Helpers
 

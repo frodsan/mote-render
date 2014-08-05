@@ -1,4 +1,5 @@
 require "cuba/test"
+require "mote"
 require_relative "../lib/mote/render"
 
 Cuba.plugin(Mote::Render)

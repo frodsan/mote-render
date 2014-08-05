@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 
   s.files = `git ls-files`.split("\n")
 
-  s.add_dependency "mote"
+  s.add_development_dependency "mote"
   s.add_development_dependency "cuba"
   s.add_development_dependency "cutest"
 end
