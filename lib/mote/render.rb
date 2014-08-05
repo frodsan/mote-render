@@ -22,6 +22,8 @@ module Mote::Render
   end
 
   def mote_path(template)
-    return File.join(settings[:mote][:views], "#{template}.mote")
+    return template if template.end_with?(".mote")
+
+    File.join(settings[:mote][:views], "#{template}.mote")
   end
 end
