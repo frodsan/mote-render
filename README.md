@@ -7,9 +7,11 @@ Mote plugin for Cuba. This plugin was extracted from the
 Usage
 -----
 
-To use Mote, you need to load the `Mote::Render` plugin as shown below:
+To use Mote in Cuba, you need to load the `Mote::Render`
+plugin as shown below:
 
 ```ruby
+require "mote"
 require "mote/render"
 
 Cuba.plugin(Mote::Render)
