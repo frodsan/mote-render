@@ -67,6 +67,26 @@ To render inner content into a layout, use the `{{ content }}` tag.
 </html>
 ```
 
+### Passing values
+
+You can easily pass variables to your templates:
+
+```ruby
+Cuba.define do
+  on "home" do
+    render("welcome", {username: "John Doe", day: "Monday"})
+  end
+end
+```
+
+And in the template file:
+
+```html
+  <!-- welcome.mote -->
+  <h1>Hello, {{username}}!</h1>
+  <p>How are things going on this beatiful {{day}}?</p>
+```
+
 ### Helpers
 
 You can use the `app` variable to access the application helpers.
