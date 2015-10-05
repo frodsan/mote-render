@@ -84,7 +84,7 @@ And in the template file:
 ```html
   <!-- welcome.mote -->
   <h1>Hello, {{username}}!</h1>
-  <p>How are things going on this beatiful {{day}}?</p>
+  <p>How are things going on this beautiful {{day}}?</p>
 ```
 
 ### Helpers
